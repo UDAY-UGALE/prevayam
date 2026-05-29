@@ -12,7 +12,7 @@
   --maxw:1180px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 body{
   font-family:'Space Grotesk',sans-serif;
   background:var(--cream);
@@ -209,9 +209,29 @@ footer{background:var(--green-deep);color:var(--cream)}
   .pillar:nth-child(2n){border-right:0}
   .var-grid,.cmp,.steps{grid-template-columns:1fr}
   .foot-top{grid-template-columns:1fr;gap:36px}
-  .navlinks{position:fixed;inset:0 0 0 auto;width:74%;max-width:320px;background:var(--green-deep);flex-direction:column;justify-content:center;gap:30px;padding:40px;transform:translateX(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);z-index:1100}
-  .navlinks.open{transform:none}
-  .navlinks a{color:var(--cream);font-size:1.05rem}
+  .navlinks{
+    position:fixed;
+    top:0;right:0;bottom:0;left:auto;
+    height:100vh;
+    width:80%;max-width:300px;
+    background:var(--green-deep);
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:8px;
+    padding:100px 40px 60px;
+    transform:translateX(110%);
+    visibility:hidden;
+    transition:transform .4s cubic-bezier(.16,1,.3,1),visibility 0s linear .4s;
+    z-index:1100;
+    overflow-y:auto;
+    box-shadow:-8px 0 40px rgba(0,0,0,.35);
+  }
+  .navlinks.open{transform:none;visibility:visible;transition:transform .4s cubic-bezier(.16,1,.3,1),visibility 0s linear 0s}
+  .navlinks a{color:var(--cream);font-size:1.1rem;padding:10px 0;width:100%;border-bottom:1px solid rgba(244,238,223,.1)}
+  .navlinks a:last-child{border-bottom:0}
+  .nav-cta{background:var(--honey)!important;color:var(--green-deep)!important;border-radius:40px!important;padding:14px 24px!important;border-bottom:0!important;margin-top:16px;text-align:center}
+  .nav-overlay{position:fixed;top:0;left:0;right:0;bottom:0;height:100vh;background:rgba(0,0,0,.5);z-index:1099;cursor:pointer}
   .burger{display:flex;z-index:1200}
   .burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   .burger.x span:nth-child(2){opacity:0}
