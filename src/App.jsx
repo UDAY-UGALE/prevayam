@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import ContactChat from './components/ContactChat'
 import Home from './pages/Home'
 import Story from './pages/Story'
 import WhyHoney from './pages/WhyHoney'
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/find" element={<Find />} />
       </Routes>
       <Footer />
+      <ContactChat />
     </BrowserRouter>
   )
 }

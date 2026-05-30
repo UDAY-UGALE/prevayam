@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const MARK = './assets/mark.png'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+  const isHome = location.pathname === '/'
 
   const close = () => setOpen(false)
 
@@ -14,7 +16,7 @@ export default function Nav() {
   }, [open])
 
   return (
-    <nav>
+    <nav className={isHome ? 'nav-on-dark' : ''}>
       <Link to="/" className="brand" onClick={close}>
         <img src={MARK} alt="Prevayam mark" />
         PREVAYAM
