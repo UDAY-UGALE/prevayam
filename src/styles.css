@@ -723,13 +723,29 @@ nav.nav-on-dark .burger span{background:var(--cream)}
   .stat-box{border-right:0;border-bottom:1px solid rgba(244,238,223,.12);padding:24px 16px}
   .stat-box:nth-child(2n){border-right:0}
   .stat-box:nth-last-child(-n+2){border-bottom:0}
-  .fe-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:560px){
   .stats-grid{grid-template-columns:1fr}
   .stat-box{border-right:0;border-bottom:1px solid rgba(244,238,223,.12)}
   .stat-box:last-child{border-bottom:0}
-  .fe-grid{grid-template-columns:1fr 1fr}
+  /* Mobile: horizontal swipe carousel for Fuel Every Vayam cards */
+  .fe-grid{
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding:6px 22px;
+    margin:0 -22px;
+    scroll-padding-left:22px;
+    gap:18px;
+  }
+  .fe-grid::-webkit-scrollbar{display:none}
+  .fe-card{
+    flex:0 0 64%;
+    scroll-snap-align:start;
+  }
   .bn-mission{flex-direction:column;gap:8px}
 }
 
