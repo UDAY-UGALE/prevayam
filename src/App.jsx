@@ -8,6 +8,7 @@ import Story from './pages/Story'
 import WhyHoney from './pages/WhyHoney'
 import Range from './pages/Range'
 import Find from './pages/Find'
+import Team from './pages/Team'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/why" element={<WhyHoney />} />
         <Route path="/range" element={<Range />} />
         <Route path="/find" element={<Find />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
       <Footer />
       <ContactChat />

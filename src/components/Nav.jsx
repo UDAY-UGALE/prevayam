@@ -27,6 +27,7 @@ export default function Nav() {
         <NavLink to="/why" onClick={close}>Why Honey</NavLink>
         <NavLink to="/range" onClick={close}>The Range</NavLink>
         <NavLink to="/why" onClick={close}>Us vs Them</NavLink>
+        <NavLink to="/team" onClick={close}>Our Team</NavLink>
         <NavLink to="/find" className="nav-cta" onClick={close}>Find Prevayam</NavLink>
       </div>
 
