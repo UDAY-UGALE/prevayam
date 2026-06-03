@@ -14,7 +14,7 @@ export default function Footer() {
           <p>
             India's first honey-based sports nutrition. Natural energy gel for athletes —
             honey based, no chemicals. Built for endurance, stamina and peak performance,
-            the way nature intended. Proudly made in Nagpur.
+            the way nature intended. Proudly made in India.
           </p>
         </div>
         <div className="foot-col">
@@ -40,7 +40,7 @@ export default function Footer() {
       <div className="foot-bottom">
         <div className="inner">
           <span>© {new Date().getFullYear()} Prevayam Nutrition. All rights reserved.</span>
-          <span>Honey Based • No Chemicals • Made in Nagpur</span>
+          <span>Honey Based • No Chemicals • Made in India</span>
         </div>
       </div>
     </footer>

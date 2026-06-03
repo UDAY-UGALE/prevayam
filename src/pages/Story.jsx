@@ -10,7 +10,7 @@ export default function Story() {
             <p className="section-tag">The Prevayam Story</p>
             <h2 className="section-h">Energy the way <em>nature</em> intended it.</h2>
             <p>
-              We started Prevayam in Nagpur with a simple frustration: most energy
+              We started Prevayam in India with a simple frustration: most energy
               gels are a mess of synthetic sugars, artificial colors and lab-made
               additives that wreck your stomach mid-effort.
             </p>

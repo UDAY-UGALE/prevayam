@@ -15,7 +15,7 @@ export default function App() {
       <ScrollToTop />
       <div className="grain"></div>
       <div className="topbar">
-        <span>Honey based • No chemicals • Natural energy gel for athletes • India's first honey sports nutrition</span>
+        <span>Natural Energy gel for Athletes</span>
       </div>
       <Nav />
       <Routes>

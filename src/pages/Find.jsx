@@ -11,7 +11,7 @@ export default function Find() {
             <h2 className="section-h">Now stocked at <em>select stores.</em></h2>
             <p style={{ marginTop: 24, fontSize: '1.08rem', lineHeight: 1.7, color: '#3a4d3f', maxWidth: '30em' }}>
               Prevayam is in its early days and currently available through partner
-              gyms, sports stores and running events around Nagpur. Drop us a line and
+              gyms, sports stores and running events around India. Drop us a line and
               we'll point you to the nearest spot — or get Prevayam onto your shelves.
             </p>
             <a href="mailto:hello@prevayam.com" className="btn btn-primary" style={{ marginTop: 30 }}>
@@ -21,7 +21,7 @@ export default function Find() {
           <div className="reveal">
             <div className="find-card">
               <div className="pin"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h2M18 12h2M7 9v6M17 9v6M9 12h6" /></svg></div>
-              <div><h4>Gyms & Fitness Studios</h4><p>Find Prevayam at partner gyms across Nagpur.</p></div>
+              <div><h4>Gyms & Fitness Studios</h4><p>Find Prevayam at partner gyms across India.</p></div>
             </div>
             <div className="find-card">
               <div className="pin"><svg viewBox="0 0 24 24" fill="none"><path d="M3 9l1-5h16l1 5M5 9v10h14V9M9 13h6" /></svg></div>
